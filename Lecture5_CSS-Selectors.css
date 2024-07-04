@@ -1,0 +1,43 @@
+p,h1
+{
+    text-align: center;
+}
+#myParagraph
+{
+    text-align:right;
+}
+.myParagraph
+{
+    margin-left: 300px;
+}
+div #myParagraph
+{
+    background: lightblue;
+}
+
+/* .Adjecnt + p
+{
+    background: lightgreen;
+} */
+
+/* .Adjecnt ~ p
+{
+    background: lightgreen;
+} */
+
+/* .Adjecnt ~ p:hover
+{
+    background: lightgreen;
+} */
+
+.Adjecnt ~ p::first-letter
+{
+    color: rgb(255, 54, 54);
+}
+
+a[target]
+{
+    background: rgb(76, 255, 198);
+}
+
+
