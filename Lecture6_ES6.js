@@ -97,7 +97,7 @@ console.log(myCar1, myCar2);*/
 
 // ----------------------------------------------------------------
 
-/*const myFunction = () => {
+const myFunction = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("Inside the Promise")
@@ -111,7 +111,7 @@ myFunction().then(() => {
 })
 .catch(() => {
     console.log("Rejected");
-});*/
+});
 
 // ----------------------------------------------------------------
 
