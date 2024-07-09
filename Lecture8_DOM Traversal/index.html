@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>My page title</h1>
+        <p>Nice caption gose here </p>
+
+        <article class="first_article">
+            <h2>List of amazing Fruits</h2>
+            <p>Must eat fruits</p>
+
+            <div class="wrapper-1">
+                <ul class="apple-list">
+                    <li class="apple">Apples</li>
+                    <li class="orange">Oranges</li>
+                    <li class="avocado">Avaocado</li>
+                    <li class="grape">
+                        Grapes
+                        <ul>
+                            <li class="type-1">Moon drops</li>
+                            <li>Sultana</li>
+                            <li>Concord</li>
+                            <li>Crimson Seedless</li>
+                        </ul>
+                    </li>
+                    <li class="banana">Bananas</li>
+                </ul>
+
+                <button class="btn-1">Read full list </button>
+            </div>
+        </article>
+
+        <article class="second_article">
+            <h2>Amazing places in Kenya</h2>
+            <p>Must visitt places in Kenya</p>
+
+            <div class="wrapper-2">
+                <ul class="places-list">
+                    <li>Maasai Mara</li>
+                    <li>Diana Beach</li>
+                    <li>Watamu Beach</li>
+                    <li>Amboseli national park</li>
+                    <li>Lake Nakuru</li>
+                </ul>
+
+                <button class="btn-2">Read full list</button>
+            </div>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
+
+<!-- index.html:86 Live reload enabled.
+const headings = document.querySelectorAll("h2")
+undefined
+hea
+VM137:1 Uncaught ReferenceError: hea is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM137:1Understand this error
+headings
+NodeList(2) [h2, h2]0: h21: h2length: 2[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+const firstHeading = headings[0]
+undefined
+firstHeading
+<h2 style=​"user-select:​ auto;​">​List of amazing Fruits​</h2>​
+const secondHeading = headings[1]
+undefined
+secon
+VM367:1 Uncaught ReferenceError: secon is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM367:1Understand this error
+secondHeading
+<h2 style=​"user-select:​ auto;​">​Amazing places in Kenya​</h2>​
+document.querySelector(".orange").innerHTML
+'Oranges'
+const appleList = document.querySelector(".apple-list")
+undefined
+appleList.children
+HTMLCollection(5) [li.apple, li.orange, li.avocado, li.grape, li.banana]
+appleList.childNodes
+NodeList(11) [text, li.apple, text, li.orange, text, li.avocado, text, li.grape, text, li.banana, text]
+appleList.firstChild
+#textassignedSlot: nullbaseURI: "http://127.0.0.1:5500/Lecture8_DOM%20Traversal/index.html"childNodes: NodeList []data: "\n                    "firstChild: nullisConnected: truelastChild: nulllength: 21nextElementSibling: li.applenextSibling: li.applenodeName: "#text"nodeType: 3nodeValue: "\n                    "ownerDocument: documentparentElement: ul.apple-listparentNode: ul.apple-listpreviousElementSibling: nullpreviousSibling: nulltextContent: "\n                    "wholeText: "\n                    "[[Prototype]]: Text
+appleList.firstChild.inner
+undefined
+appleList.last
+undefined
+appleList.lastChild
+#textassignedSlot: nullbaseURI: "http://127.0.0.1:5500/Lecture8_DOM%20Traversal/index.html"childNodes: NodeList []data: "\n                "firstChild: nullisConnected: truelastChild: nulllength: 17nextElementSibling: nullnextSibling: nullnodeName: "#text"nodeType: 3nodeValue: "\n                "ownerDocument: documentparentElement: ul.apple-listparentNode: ul.apple-listpreviousElementSibling: li.bananapreviousSibling: li.bananatextContent: "\n                "wholeText: "\n                "[[Prototype]]: Text
+appleList.parentElement
+<div class=​"wrapper-1" style=​"user-select:​ auto;​">​<ul class=​"apple-list" style=​"user-select:​ auto;​">​…​</ul>​<button class=​"btn-1" fdprocessedid=​"y5shyq" style=​"user-select:​ auto;​">​Read full list ​</button>​</div>​
+appleList.parentNode
+<div class=​"wrapper-1" style=​"user-select:​ auto;​">​<ul class=​"apple-list" style=​"user-select:​ auto;​">​…​</ul>​<button class=​"btn-1" fdprocessedid=​"y5shyq" style=​"user-select:​ auto;​">​Read full list ​</button>​</div>​
+const btn1 = document.querySelector(".brn-1")
+undefined
+btn1.closest
+VM1053:1 Uncaught TypeError: Cannot read properties of null (reading 'closest')
+    at <anonymous>:1:6
+(anonymous) @ VM1053:1Understand this error
+const btn1 = document.querySelector(".btn-1")
+undefined
+btn1.closest
+ƒ closest() { [native code] }
+btn1
+<button class=​"btn-1" fdprocessedid=​"y5shyq" style=​"user-select:​ auto;​">​Read full list ​</button>​
+document orange = document.querySelector(".orange")
+VM1221:1 Uncaught SyntaxError: Unexpected identifier 'orange'Understand this error
+const orange = document.querySelector(".orange")
+undefined
+const avocado = orange.nextElementSibling
+undefined
+apple
+VM1359:1 Uncaught ReferenceError: apple is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1359:1Understand this error
+apple
+VM1363:1 Uncaught ReferenceError: apple is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1363:1Understand this error
+avocado
+<li class=​"avocado" style=​"user-select:​ auto;​">​::marker​"Avaocado"</li>​ -->
